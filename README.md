@@ -87,12 +87,12 @@ then set the threshold between them.
 
 Reference values measured on a Bluetooth Magic Trackpad 2: a normal click
 peaks at a pressure of about 64–77, a deliberate hard press at 117–253. The
-default threshold of 140 sits between them and re-arms below 100.
+default threshold of 140 sits between them and re-arms below 120.
 
 | Option | Default | Meaning |
 |---|---|---|
 | `-t, --threshold` | `140` | Pressure (0–253) that triggers the force click |
-| `--hysteresis` | `40` | How far pressure must drop below the threshold to re-arm |
+| `--hysteresis` | `20` | How far pressure must drop below the threshold to re-arm |
 | `--strength` | `0x30` | Force pulse strength |
 | `--sharp` | `0x10` | Sharp "click" component (keep ≤ `0x20`) |
 | `--deep` | `0x10` | Deep "thud" component (keep ≤ `0x40`) |

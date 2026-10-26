@@ -231,8 +231,8 @@ def main():
     p = argparse.ArgumentParser(description="Force Click haptics for Apple Magic Trackpad 2 on Linux.")
     p.add_argument("-t", "--threshold", type=byte, default=140,
                    help="finger pressure (0-253) that triggers the force click (default 140)")
-    p.add_argument("--hysteresis", type=byte, default=40,
-                   help="pressure drop below threshold needed to re-arm (default 40)")
+    p.add_argument("--hysteresis", type=byte, default=20,
+                   help="pressure drop below threshold needed to re-arm (default 20)")
     p.add_argument("--strength", type=byte, default=0x30, help="force pulse strength (default 0x30)")
     p.add_argument("--sharp", type=byte, default=0x10, help="sharp/click component, keep <= 0x20 (default 0x10)")
     p.add_argument("--deep", type=byte, default=0x10, help="deep/thud component, keep <= 0x40 (default 0x10)")
