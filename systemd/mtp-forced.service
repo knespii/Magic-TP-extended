@@ -1,0 +1,11 @@
+[Unit]
+Description=Force Click haptics for Apple Magic Trackpad 2
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/mtp-forced
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

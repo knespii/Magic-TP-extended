@@ -1,0 +1,6 @@
+# Let users in the "input" group (and the logged-in seat user) write haptic
+# reports to the Apple Magic Trackpad 2 / USB-C Magic Trackpad via hidraw.
+SUBSYSTEM=="hidraw", KERNELS=="0005:004C:0265.*", MODE="0660", GROUP="input", TAG+="uaccess"
+SUBSYSTEM=="hidraw", KERNELS=="0003:05AC:0265.*", MODE="0660", GROUP="input", TAG+="uaccess"
+SUBSYSTEM=="hidraw", KERNELS=="0005:004C:0324.*", MODE="0660", GROUP="input", TAG+="uaccess"
+SUBSYSTEM=="hidraw", KERNELS=="0003:05AC:0324.*", MODE="0660", GROUP="input", TAG+="uaccess"
