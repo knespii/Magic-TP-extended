@@ -39,7 +39,7 @@ dependencies.
 
 | Device | Connection | Status |
 |---|---|---|
-| Magic Trackpad 2 (`004C:0265`) | Bluetooth | primary target (Debian 13, kernel 6.12) |
+| Magic Trackpad 2 (`004C:0265`) | Bluetooth | tested (Debian 13, kernel 6.12) |
 | Magic Trackpad 2 (`05AC:0265`) | USB cable | untested; USB may need a different transport |
 | Magic Trackpad USB-C (`0324`) | BT / USB | untested |
 
